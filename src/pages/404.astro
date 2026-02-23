@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CTA from '../components/CTA.astro';
+---
+
+<Layout title="Page Not Found - SouledFolks" description="The page you're looking for doesn't exist, but we're here to help">
+  <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent via-blue-50 to-transparent">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="text-9xl font-bold text-blue-400 mb-4">404</div>
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">We Got Lost</h1>
+      <p class="text-xl text-gray-700 mb-8">
+        It looks like this page doesn't exist. But that's okay—let's get you where you need to go.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="/"
+          class="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          Return Home
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </a>
+        <a 
+          href="/contact"
+          class="inline-flex items-center justify-center px-8 py-3 border-2 border-blue-300 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+        >
+          Reach Out to Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <CTA 
+    title="We're Here to Help"
+    description="If you're having trouble finding what you need, let's connect and support you."
+  />
+</Layout>

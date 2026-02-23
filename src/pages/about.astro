@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CTA from '../components/CTA.astro';
+import { siteConfig } from '../config';
+---
+
+<Layout title={`About - ${siteConfig.title}`} description="Learn about our compassionate approach to mental health support">
+  <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-transparent to-indigo-50">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold text-gray-900 mb-8">Our Story</h1>
+      
+      <div class="prose prose-lg max-w-none space-y-8">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Why SouledFolks Exists</h2>
+          <p class="text-gray-700 leading-relaxed">
+            We believe that mental health isn't a luxury—it's a fundamental human need. SouledFolks was born from a simple, powerful idea: 
+            that everyone deserves to be truly heard, deeply understood, and gently supported on their healing journey.
+          </p>
+          <p class="text-gray-700 leading-relaxed mt-4">
+            We're not here to sell you solutions. We're here to walk with you, listen to your story, and help you discover your own strength.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Values</h2>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <span class="text-blue-600 font-bold mr-4 text-2xl">✨</span>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Compassion First</h3>
+                <p class="text-gray-700">Every interaction begins with genuine care and without judgment</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-indigo-600 font-bold mr-4 text-2xl">🌿</span>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Authentic Connection</h3>
+                <p class="text-gray-700">Real, meaningful relationships based on trust and understanding</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-cyan-600 font-bold mr-4 text-2xl">🌱</span>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Your Pace, Your Journey</h3>
+                <p class="text-gray-700">Healing isn't linear. We honor your unique path and timeline</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-blue-400 font-bold mr-4 text-2xl">🔐</span>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Sacred Confidentiality</h3>
+                <p class="text-gray-700">Your trust and privacy are sacred. We protect them fiercely.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <span class="text-purple-600 font-bold mr-4 text-2xl">💫</span>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Always Available</h3>
+                <p class="text-gray-700">Crisis doesn't follow business hours. Neither do we.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Who We Are</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Our team consists of dedicated, empathetic professionals who have chosen to dedicate their lives to supporting others. 
+            We're not just trained in therapeutic approaches—we're committed to genuine human connection.
+          </p>
+          <p class="text-gray-700 leading-relaxed mt-4">
+            We believe in continuous learning, deep listening, and meeting people where they are. Your wellbeing isn't a transaction to us—it's a calling.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTA 
+    title="Join a Community That Cares"
+    description="Experience the difference that genuine compassion can make in your life."
+  />
+</Layout>

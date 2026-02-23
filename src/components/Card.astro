@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  icon?: string;
+  href?: string;
+  featured?: boolean;
+}
+
+const { title, description, icon, href, featured = false } = Astro.props;
+---
+
+<div class={`p-6 rounded-lg border-2 transition-all duration-300 ${
+  featured 
+    ? 'border-emerald-600 bg-emerald-50 shadow-lg' 
+    : 'border-gray-200 bg-white hover:border-emerald-300 hover:shadow-lg'
+}`}>
+  {icon && <div class="text-4xl mb-4">{icon}</div>}
+  <h3 class="text-xl font-bold text-gray-900 mb-3">{title}</h3>
+  <p class="text-gray-600 mb-4">{description}</p>
+  {href && (
+    <a 
+      href={href} 
+      class="inline-flex items-center text-emerald-600 font-semibold hover:text-emerald-700 transition-colors"
+    >
+      Learn more
+      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </a>
+  )}
+</div>
