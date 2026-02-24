@@ -1,6 +1,6 @@
-# Andrea Mental Health - Static Website
+# SouledFolks - Static Website
 
-A production-ready static website built with **Astro** and **Tailwind CSS** for a mental health support organization.
+A production-ready static website built with **Astro** and **Tailwind CSS** for compassionate mental health support.
 
 ## 🚀 Features
 

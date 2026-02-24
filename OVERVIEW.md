@@ -1,4 +1,4 @@
-# 🎉 Andrea Mental Health Website - Complete Project Overview
+# 🎉 SouledFolks Website - Complete Project Overview
 
 **Status:** ✅ **PRODUCTION READY** | Build: ✅ **SUCCESS** | Errors: ✅ **ZERO**
 
@@ -196,10 +196,10 @@ All content is editable in `src/config.ts`:
 ```typescript
 export const siteConfig = {
   // Basic info
-  title: 'Mental Health Support',
-  description: 'Professional mental health resources...',
-  author: 'Andrea Mental Health',
-  email: 'contact@mentalhealth.com',
+  title: 'SouledFolks - Compassionate Support',
+  description: 'A sanctuary for healing, growth, and connection...',
+  author: 'SouledFolks',
+  email: 'hello@souledfolks.com',
   phone: '+1 (555) 123-4567',
   
   // Navigation menu
