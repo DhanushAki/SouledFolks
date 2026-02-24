@@ -5,8 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://dhanushaki.github.io',
-  base: '/SouledFolks',
+  site: 'https://souledfolks.netlify.app',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]
